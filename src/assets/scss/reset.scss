@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body,
 div,
@@ -95,34 +99,9 @@ html {
     text-transform: none;
     visibility: visible;
 }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-menu,
-section,
-summary {
-    display: block;
-}
-
 ol,
 ul {
     list-style: none;
-}
-
-audio,
-canvas,
-progress,
-video {
-    display: inline-block;
-    vertical-align: baseline;
 }
 
 img,
@@ -132,13 +111,12 @@ a img {
 }
 
 img {
+    display: block;
     width: 100%;
-    height: 100%;
-    vertical-align: middle;
+    height: auto;
 }
 
 a {
-    color: #000;
     text-decoration: none;
     &:active,
     &:hover {
@@ -146,21 +124,6 @@ a {
         text-decoration: none;
     }
 }
-
-input[type='submit'],
-button {
-    cursor: pointer;
-}
-
-textarea {
-    overflow: auto;
-}
-
-i,
-figure {
-    background: transparent no-repeat center;
-}
-
 input,
 button {
     margin: 0;
@@ -168,28 +131,6 @@ button {
     background: transparent;
     border: 0;
 }
-
-input,
-textarea {
-    resize: none;
-    user-select: text;
-}
-
 *:focus {
     outline: none;
-}
-
-table {
-    border-spacing: 0;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td,
-th {
-    padding: 0;
-}
-
-label {
-    cursor: pointer;
 }

@@ -1,0 +1,57 @@
+.product {
+    padding: 155px 0 100px;
+    background-color: $black-5;
+
+    &__container {
+        @extend .container;
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        margin: auto 0;
+    }
+    &__subtitle {
+        @include font-style($fira-sans-regular, 22px, $blue-1);
+
+        margin-bottom: 10px;
+        line-height: 32px;
+    }
+    &__title {
+        @include font-style($fira-sans-light, 54px, $white);
+
+        margin-bottom: 10px;
+        line-height: 52px;
+        &--medium {
+            font-family: $fira-sans-medium;
+        }
+    }
+    &__description {
+        @include font-style($fira-sans-regular, 18px, $white);
+
+        margin-bottom: 28px;
+        line-height: 29px;
+    }
+    &__link {
+        width: 130px;
+        height: 48px;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    &__offer-link {
+        @include font-style($fira-sans-medium, 15px, $accent-3);
+        @include beveled-corners(rgba(255, 210, 0, .1), 12px);
+
+        position: absolute;
+        top: 24%;
+        left: 40%;
+        padding: 6px 20px;
+        transition: .3s;
+        letter-spacing: .08em;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
