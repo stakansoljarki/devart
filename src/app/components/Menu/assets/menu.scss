@@ -1,0 +1,18 @@
+.menu {
+    display: flex;
+    gap: 40px;
+
+    &__language-button {
+        @include font-style($fira-sans-regular, 16px, $white);
+
+        display: flex;
+        align-items: center;
+    }
+    &__shopping-cart-button,
+    &__language-button {
+        @extend .link-default-styles;
+    }
+    &__language-button-icon {
+        margin-left: 4px;
+    }
+}

@@ -1,0 +1,30 @@
+.link {
+    @include font-style($fira-sans-medium, 14px, $white);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 16px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    transition: .3s;
+
+    &--blue {
+        background-color: $blue-2;
+        &:hover {
+            background-color: lighten($blue-2, 10%);
+        }
+        &:focus {
+            background-color: darken($blue-2, 5%);
+        }
+    }
+    &--transparent {
+        border: 1.5px solid rgba(255, 255, 255, 0.25);
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.75);
+        }
+        &:focus {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}

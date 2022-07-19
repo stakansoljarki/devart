@@ -3,3 +3,14 @@
     font-size: $size;
     color: $color;
 }
+
+@mixin beveled-corners($bg, $tl:0, $br:$tl) {
+    background: $bg;
+    background:
+        linear-gradient(115deg, transparent $tl, $bg 0)
+        top left,
+        linear-gradient(-65deg, transparent $br, $bg 0)
+        bottom right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}

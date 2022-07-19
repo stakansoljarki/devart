@@ -1,0 +1,6 @@
+.nav {
+    &__link {
+        @include font-style($fira-sans-regular, 16px, $white);
+        @extend .link-default-styles;
+    }
+}
