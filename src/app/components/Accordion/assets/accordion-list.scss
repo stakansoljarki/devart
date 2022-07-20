@@ -1,0 +1,37 @@
+.accordion {
+
+    &__button {
+        @include font-style($fira-sans-medium, 18px, $black-1);
+
+        position: relative;
+        padding: 20px 40px 20px 16px;
+        line-height: 24px;
+        border-top: 1px solid #EFF0F2;
+        cursor: pointer;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url('../../../../assets/images/arrow-icon.svg');
+            transition: .3s ease;
+        }
+    }
+    &__button[aria-expanded='true'],
+    &__button[aria-selected='true'] {
+        &::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+    &__panel {
+        @include font-style($fira-sans-regular, 16px, $black-3);
+
+        padding: 18px 25px;
+        line-height: 28px;
+        background-color: $gray-4;
+    }
+}

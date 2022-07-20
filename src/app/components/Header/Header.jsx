@@ -8,7 +8,7 @@ import Logo from "../Logo/Logo";
 const data = [
     {
         text: 'Products',
-        href: 'localhost:3000',
+        href: '/',
     },
     {
         text: 'Store',
@@ -29,7 +29,6 @@ const data = [
 ]
 
 const Header = () => {
-
     const [headerItems] = useState(data)
 
     return(
