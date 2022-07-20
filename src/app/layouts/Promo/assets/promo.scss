@@ -1,0 +1,51 @@
+.promo {
+    padding: 45px 0;
+    background-color: $black-5;
+
+    &__container {
+        @extend .container;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 60px;
+    }
+    &__img-wrap {
+        margin-right: 30px;
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        @include font-style($fira-sans-medium, 18px, $blue-3);
+
+        margin-bottom: 4px;
+        line-height: 24px;
+    }
+    &__list-wrap {
+        display: flex;
+    }
+    &__list {
+        &:not(:last-child) {
+            margin-right: 90px;
+        }
+    }
+    &__list-item {
+        @include font-style($fira-sans-light, 16px, $white);
+
+        position: relative;
+        padding-left: 16px;
+        line-height: 27px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $blue-3;
+        }
+    }
+}
