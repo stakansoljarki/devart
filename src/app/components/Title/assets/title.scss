@@ -1,0 +1,9 @@
+.title {
+    @include font-style($fira-sans-light, 36px, $black-1);
+
+    line-height: 50px;
+
+    &--white {
+        color: $white;
+    }
+}

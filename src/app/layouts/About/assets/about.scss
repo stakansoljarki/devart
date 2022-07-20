@@ -4,7 +4,6 @@
 
     &__header {
         margin-bottom: 90px;
-        padding: 12px 0;
         box-shadow: 0 2px 3px rgba(0, 0, 0, .15);
     }
     &__container {
@@ -51,15 +50,12 @@
         margin-right: 15px;
     }
     &__nav {
-        margin-left: auto;
+        margin: 0 20px 0 auto;
         .nav {
             &__link {
                 color: $black-1;
             }
         }
-    }
-    &__link-wrap {
-        margin-left: 20px;
     }
     &__link {
         width: 135px;
