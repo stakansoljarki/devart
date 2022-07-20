@@ -1,0 +1,49 @@
+.indicators {
+    padding: 75px 0 110px;
+    background-color: $black-6;
+
+    &__container {
+        @extend .container;
+    }
+    &__title {
+        margin-bottom: 34px;
+        text-align: center;
+    }
+    &__nav {
+        margin-bottom: 50px;
+        border-bottom: 3px solid rgba(255, 255, 255, .1);
+        .nav {
+            &__list {
+                justify-content: space-between;
+                padding: 0 80px;
+            }
+        }
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__card {
+        padding: 36px 40px;
+        background-color: $gray-1;
+        box-shadow: 0 20px 30px rgba(44, 48, 54, .6);
+    }
+    &__card-title {
+        @include font-style($fira-sans-medium, 54px, $accent-3);
+
+        line-height: 65px;
+    }
+    &__card-subtitle {
+        @include font-style($fira-sans-regular, 22px, $white);
+
+        margin-bottom: 24px;
+        line-height: 32px;
+    }
+    &__card-description {
+        @include font-style($fira-sans-regular, 16px, $white);
+
+        line-height: 28px;
+        opacity: .8;
+    }
+}

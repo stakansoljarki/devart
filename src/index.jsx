@@ -9,6 +9,7 @@ import About from "./app/layouts/About/About";
 import VideoGuide from "./app/layouts/VideoGuide/VideoGuide";
 import Promo from "./app/layouts/Promo/Promo";
 import Features from "./app/layouts/Features/Features";
+import Indicators from "./app/layouts/Indicators/Indicators";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,5 +21,6 @@ root.render(
       <VideoGuide />
       <Promo />
       <Features />
+      <Indicators/>
   </React.StrictMode>
 );

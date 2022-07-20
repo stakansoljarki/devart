@@ -19,7 +19,7 @@
         }
         &--border-bottom {
             &::after {
-                bottom: 0;
+                bottom: -3px;
                 width: 100%;
                 height: 3px;
             }
