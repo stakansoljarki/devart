@@ -15,6 +15,17 @@
     &--green {
         @include background-effects($accent-2);
     }
+    &--white {
+        background-color: $white;
+        color: $black-1;
+        &:hover {
+            background-color: darken($white, 5%);
+        }
+        &:focus {
+            background-color: darken($white, 5%);
+            box-shadow: 0 0 1px 1px $gray-6;
+        }
+    }
     &--bordered {
         color: $blue-2;
         border: 1px solid $gray-3;
