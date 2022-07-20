@@ -1,9 +1,10 @@
 import React from "react";
+import classNames from "classnames";
 
-const NavItem = ({href, text}) => {
+const NavItem = ({href, text, className}) => {
     return(
         <li>
-            <a href={href} className="nav__link">{text}</a>
+            <a href={href} className={classNames('nav__link',(className))}>{text}</a>
         </li>
     )
 }

@@ -10,12 +10,19 @@
     transition: .3s;
 
     &--blue {
-        background-color: $blue-2;
+        @include background-effects($blue-2);
+    }
+    &--green {
+        @include background-effects($accent-2);
+    }
+    &--bordered {
+        color: $blue-2;
+        border: 1px solid $gray-3;
         &:hover {
-            background-color: lighten($blue-2, 10%);
+            border-color: $blue-2;
         }
         &:focus {
-            background-color: darken($blue-2, 5%);
+            border-color: darken($blue-2, 5%);
         }
     }
     &--transparent {
