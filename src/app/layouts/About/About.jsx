@@ -10,7 +10,7 @@ const data = [
     {
         text: 'Overview',
         href: '/',
-        className: 'nav__link--active',
+        className: 'nav__link--border-bottom',
     },
     {
         text: 'What\'s New',
