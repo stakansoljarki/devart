@@ -7,7 +7,7 @@ const data = [
     {
         text: 'Boost productivity',
         href: '/',
-        className: 'nav__link--active',
+        className: 'nav__link--border-bottom',
     },
     {
         text: 'Reuse code modules',
