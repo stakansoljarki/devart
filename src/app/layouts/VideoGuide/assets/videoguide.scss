@@ -53,8 +53,8 @@
         }
     }
     &__link-arrow {
-        width: 16px;
-        height: 16px;
+        @include size(16px);
+
         margin-left: 6px;
         background-image: url('../../../../assets/images/arrow-icon.svg');
     }

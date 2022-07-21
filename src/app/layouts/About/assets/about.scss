@@ -79,12 +79,11 @@
             padding-left: 25px;
             letter-spacing: .1em;
             &:before {
+                @include size(24px);
                 content: '';
                 position: absolute;
                 left: 16px;
                 display: block;
-                width: 24px;
-                height: 24px;
             }
         }
         &:not(:last-child) {

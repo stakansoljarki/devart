@@ -37,13 +37,13 @@
         padding-left: 16px;
         line-height: 27px;
         &:before {
+            @include size(5px);
+
             content: '';
             position: absolute;
             top: 50%;
             left: 0;
             transform: translateY(-50%);
-            width: 5px;
-            height: 5px;
             border-radius: 50%;
             background-color: $blue-3;
         }

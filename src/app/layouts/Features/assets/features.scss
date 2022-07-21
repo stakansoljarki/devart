@@ -65,8 +65,8 @@
         background-color: $blue-2;
     }
     &__link-icon {
-        width: 16px;
-        height: 16px;
+        @include size(16px);
+
         margin-left: 10px;
         background-image: url('../../../../assets/images/arrow-icon-white.svg');
     }
