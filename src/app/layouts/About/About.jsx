@@ -1,69 +1,18 @@
 import React, {useState} from "react";
-import sqlLogo from "./assets/images/sql-logo.svg"
+
 import Nav from "../../components/Nav/Nav";
 import NavItem from "../../components/Nav/NavItem";
 import Link from "../../components/Link/Link";
 import AccordionList from "../../components/Accordion/AccordionList";
 import AccordionListItem from "../../components/Accordion/AccordionListItem";
 
-const data = [
-    {
-        text: 'Overview',
-        href: '/',
-        className: 'nav__link--border-bottom',
-    },
-    {
-        text: 'What\'s New',
-        href: '/',
-    },
-    {
-        text: 'Features',
-        href: '/',
-    },
-    {
-        text: 'Editions',
-        href: '/',
-    },
-    {
-        text: 'Support',
-        href: '/',
-    }
-]
+import navData from "./assets/navConstants";
+import accordionListData from "./assets/accordionListConstants";
 
-const accordionListData = [
-    {
-        title: 'Express edition available',
-        text: 'SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required objects while you are writing SQL code. This feature supports nearly 70 types of database objects.',
-    },
-    {
-        title: 'Beautify T-SQL code and unify code standards with smart SQL Formatter',
-        text: 'SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required objects while you are writing SQL code. This feature supports nearly 70 types of database objects.',
-    },
-    {
-        title: 'Get the essential information on DB objects while you are writing a code',
-        text: 'SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required objects while you are writing SQL code. This feature supports nearly 70 types of database objects.',
-    },
-    {
-        title: 'Format your SQL query right in Management Studio or Visual Studio',
-        text: 'SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required objects while you are writing SQL code. This feature supports nearly 70 types of database objects.',
-    },
-    {
-        title: 'Use rich SQL code snippet collection, manage and modify the existing snippets or create your own templates',
-        text: 'SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required objects while you are writing SQL code. This feature supports nearly 70 types of database objects.',
-    },
-    {
-        title: 'Format your SQL query right in Management Studio or Visual Studio',
-        text: 'SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required objects while you are writing SQL code. This feature supports nearly 70 types of database objects.',
-    },
-    {
-        title: 'Rename tables, columns, procedures, and functions safely with automatic correction of references to the renamed objects',
-        text: 'SQL Complete conveniently delivers quick object overview tooltips by simply hovering over the required objects while you are writing SQL code. This feature supports nearly 70 types of database objects.',
-    },
-
-]
+import sqlLogo from "./assets/images/sql-logo.svg"
 
 const About = () => {
-    const [aboutItems] = useState(data)
+    const [nav] = useState(navData)
     const [accordionList] = useState(accordionListData)
 
     return(
@@ -75,8 +24,8 @@ const About = () => {
                         SQL Complete
                     </a>
                     <Nav className="about__nav">
-                        {aboutItems.map(aboutItem => (
-                            <NavItem className={aboutItem.className} href={aboutItem.href} text={aboutItem.text}/>
+                        {nav.map(navItem => (
+                            <NavItem className={navItem.className} href={navItem.href} text={navItem.text}/>
                         ))}
                     </Nav>
                     <div className="about__link-wrap">

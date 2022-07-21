@@ -1,7 +1,8 @@
 import React from "react";
-import sqlComplete from "./assets/images/sql-complete.svg"
 
 import Link from "../../components/Link/Link";
+
+import sqlComplete from "./assets/images/sql-complete.svg"
 
 const Product = () => {
     return(

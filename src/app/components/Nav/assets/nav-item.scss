@@ -4,7 +4,8 @@
         @extend .link-default-styles;
 
         position: relative;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
         padding: 28px 0;
         line-height: 19px;
         &--border-bottom,

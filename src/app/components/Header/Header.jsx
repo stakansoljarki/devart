@@ -5,39 +5,24 @@ import NavItem from "../Nav/NavItem";
 import Menu from "../Menu/Menu";
 import Logo from "../Logo/Logo";
 
-const data = [
-    {
-        text: 'Products',
-        href: '/',
-    },
-    {
-        text: 'Store',
-        href: '/',
-    },
-    {
-        text: 'Support',
-        href: '/',
-    },
-    {
-        text: 'Blog',
-        href: '/',
-    },
-    {
-        text: 'Company',
-        href: '/',
-    }
-]
+import navData from "../Header/assets/constants";
 
 const Header = () => {
-    const [headerItems] = useState(data)
+    const [nav] = useState(navData)
 
     return(
         <header className="header">
             <div className="header__container">
                 <Logo/>
                 <Nav className="header__nav">
-                    {headerItems.map(headerItem => (
-                        <NavItem href={headerItem.href} text={headerItem.text}/>
+                    {nav.map(navItem => (
+                        <NavItem
+                            withImage={navItem.withImage}
+                            src={navItem.withImage}
+                            href={navItem.href}
+                            alt={navItem.alt}
+                            text={navItem.text}
+                        />
                     ))}
                 </Nav>
                 <Menu />
