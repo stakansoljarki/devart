@@ -15,6 +15,7 @@ import Clients from "./app/layouts/Clients/Clients";
 import Awards from "./app/layouts/Awards/Awards";
 import Articles from "./app/layouts/Articles/Articles";
 import Discount from "./app/layouts/Discount/Discount";
+import Footer from "./app/components/Footer/Footer";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,5 +33,6 @@ root.render(
       <Awards />
       <Articles />
       <Discount />
+      <Footer />
   </React.StrictMode>
 );
