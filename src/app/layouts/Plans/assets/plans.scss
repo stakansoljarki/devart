@@ -1,0 +1,18 @@
+.plans {
+    padding: 90px 0 110px;
+
+    &__container {
+        @extend .container;
+    }
+    &__title {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    &__cards-wrap {
+        display: flex;
+        gap: 30px;
+    }
+    &__offer-card {
+        width: 33%;
+    }
+}

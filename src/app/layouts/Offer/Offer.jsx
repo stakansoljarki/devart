@@ -1,50 +1,48 @@
-import React from "react";
+import React, {useState} from "react";
+
+import OfferCard from "../../components/OfferCard/OfferCard";
 import Link from "../../components/Link/Link";
 
 import commentIcon from "./assets/images/comment-icon.svg"
 import calendarIcon from "./assets/images/calendar-icon.svg"
-import doneIcon from "./assets/images/done-icon.svg"
-import messageIcon from "./assets/images/message-icon.svg"
 import discountIcon from "./assets/images/discount-icon.svg"
 
+const data = [
+    {
+        logo: `${commentIcon}`,
+        title: 'Need a hand',
+        description: 'If you need any help or have questions about Devart tools or purchasing options, do not hesitate to get in touch with us',
+        withList: 'withList',
+    },
+    {
+        logo: `${calendarIcon}`,
+        title: 'Get started with SQL Complete at no cost',
+        description: 'Download a FREE trial version and see how much time you can save on your coding and database deployment today.',
+        withLink: 'withLink',
+        isBlue: 'isBlue',
+        linkText: 'Download free',
+    },
+]
+
 const Offer = () => {
+    const [offers] = useState(data)
+
     return(
         <section className="offer">
             <div className="offer__container">
                 <div className="offer__cards-wrap">
-                    <div className="offer__card">
-                        <div className="offer__card-logo-wrap">
-                            <img className="offer__card-logo" src={commentIcon} alt="message logo"/>
-                        </div>
-                        <div className="offer__card-info">
-                            <h4 className="offer__card-title">Need a hand?</h4>
-                            <p className="offer__card-description">If you need any help or have questions about Devart tools or purchasing options, do not hesitate to get in touch with us.</p>
-                            <ul className="offer__card-list">
-                                <li className="offer__card-item">
-                                    <a className="offer__card-link" href="/">
-                                        <img className="offer__card-icon" src={doneIcon} alt="logo"/>
-                                        <span>Purchasing FAQ</span>
-                                    </a>
-                                </li>
-                                <li className="offer__card-item">
-                                    <a className="offer__card-link" href="/">
-                                        <img className="offer__card-icon" src={messageIcon} alt="logo"/>
-                                        <span>sales@devart.com</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="offer__card">
-                        <div className="offer__card-logo">
-                            <img src={calendarIcon} alt="message logo"/>
-                        </div>
-                        <div className="offer__card-info">
-                            <h4 className="offer__card-title">Get started with SQL Complete at no cost</h4>
-                            <p className="offer__card-description">Download a FREE trial version and see how much time you can save on your coding and database deployment today.</p>
-                            <Link href="/" className="offer__link" isBlue>Download free</Link>
-                        </div>
-                    </div>
+                    {offers.map(offer => (
+                        <OfferCard
+                            logo={offer.logo}
+                            title={offer.title}
+                            description={offer.description}
+                            withList={offer.withList}
+                            withLink={offer.withLink}
+                            isBlue={offer.isBlue}
+                            isTransparent={offer.isTransparent}
+                            linkText={offer.linkText}
+                        />
+                    ))}
                 </div>
                 <div className="offer__discount">
                     <div className="offer__discount-logo">
