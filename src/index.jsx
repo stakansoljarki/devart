@@ -11,6 +11,7 @@ import Promo from "./app/layouts/Promo/Promo";
 import Features from "./app/layouts/Features/Features";
 import Indicators from "./app/layouts/Indicators/Indicators";
 import Offer from "./app/layouts/Offer/Offer";
+import Clients from "./app/layouts/Clients/Clients";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,5 +25,6 @@ root.render(
       <Features />
       <Indicators/>
       <Offer />
+      <Clients />
   </React.StrictMode>
 );
