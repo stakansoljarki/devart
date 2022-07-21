@@ -1,34 +1,40 @@
 const videoGuideData = [
-    {
-        text: 'Boost productivity',
-        href: '/',
-        className: 'nav__link--border-bottom',
-    },
-    {
-        text: 'Reuse code modules',
-        href: '/',
-        className: '',
-    },
-    {
-        text: 'Improve code quality',
-        href: '/',
-        className: '',
-    },
-    {
-        text: 'Unify SQL standards',
-        href: '/',
-        className: '',
-    },
-    {
-        text: 'Work safe',
-        href: '/',
-        className: '',
-    },
-    {
-        text: 'Operate with data',
-        href: '/',
-        className: '',
-    },
-]
+  {
+    id: '1',
+    text: 'Boost productivity',
+    href: '/',
+    className: 'nav__link--border-bottom',
+  },
+  {
+    id: '2',
+    text: 'Reuse code modules',
+    href: '/',
+    className: '',
+  },
+  {
+    id: '3',
+    text: 'Improve code quality',
+    href: '/',
+    className: '',
+  },
+  {
+    id: '4',
+    text: 'Unify SQL standards',
+    href: '/',
+    className: '',
+  },
+  {
+    id: '5',
+    text: 'Work safe',
+    href: '/',
+    className: '',
+  },
+  {
+    id: '6',
+    text: 'Operate with data',
+    href: '/',
+    className: '',
+  },
+];
 
 export default videoGuideData;

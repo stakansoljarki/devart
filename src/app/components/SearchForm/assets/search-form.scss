@@ -1,10 +1,9 @@
 .search-form {
-
-    &__search-input,
-    &__submit-input {
-        display: none;
-    }
-    &__search-icon {
-        @extend .link-default-styles;
-    }
+  &__search-input,
+  &__submit-input {
+    display: none;
+  }
+  &__search-icon {
+    @extend .link-default-styles;
+  }
 }

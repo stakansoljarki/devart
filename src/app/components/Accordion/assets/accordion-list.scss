@@ -1,37 +1,36 @@
 .accordion {
+  &__button {
+    @include font-style($fira-sans-medium, 18px, $black-1);
 
-    &__button {
-        @include font-style($fira-sans-medium, 18px, $black-1);
+    position: relative;
+    padding: 20px 40px 20px 16px;
+    line-height: 24px;
+    border-top: 1px solid $gray-7;
+    cursor: pointer;
+    &:after {
+      @include size(24px);
 
-        position: relative;
-        padding: 20px 40px 20px 16px;
-        line-height: 24px;
-        border-top: 1px solid $gray-7;
-        cursor: pointer;
-        &:after {
-            @include size(24px);
-
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            display: inline-block;
-            background-image: url('../../../../assets/images/collapse-icon.svg');
-            transition: .3s ease;
-        }
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: inline-block;
+      background-image: url('../../../../assets/images/collapse-icon.svg');
+      transition: 0.3s ease;
     }
-    &__button[aria-expanded='true'],
-    &__button[aria-selected='true'] {
-        &::after {
-            transform: translateY(-50%) rotate(180deg);
-        }
+  }
+  &__button[aria-expanded='true'],
+  &__button[aria-selected='true'] {
+    &::after {
+      transform: translateY(-50%) rotate(180deg);
     }
-    &__panel {
-        @include font-style($fira-sans-regular, 16px, $black-3);
+  }
+  &__panel {
+    @include font-style($fira-sans-regular, 16px, $black-3);
 
-        padding: 18px 25px;
-        line-height: 28px;
-        background-color: $gray-4;
-    }
+    padding: 18px 25px;
+    line-height: 28px;
+    background-color: $gray-4;
+  }
 }

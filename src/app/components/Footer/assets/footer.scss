@@ -1,101 +1,101 @@
 .footer {
-    padding-top: 90px;
-    background-color: #222227;
+  padding-top: 90px;
+  background-color: #222227;
 
-    &__container {
-        @extend .container;
-    }
-    &__content {
-        display: flex;
-        justify-content: space-between;
-        column-gap: 90px;
-        margin-bottom: 50px;
-    }
-    &__info {
-        display: flex;
-        flex-direction: column;
-        max-width: 270px;
-    }
-    &__description {
-        @include font-style($open-sans-regular, 14px, $white);
+  &__container {
+    @extend .container;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 90px;
+    margin-bottom: 50px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+  }
+  &__description {
+    @include font-style($open-sans-regular, 14px, $white);
 
-        flex: 1;
-        margin: 24px 0 40px;
-        line-height: 26px;
-        opacity: .6;
-    }
-    &__title {
-        @include font-style($fira-sans-medium, 18px, $white);
+    flex: 1;
+    margin: 24px 0 40px;
+    line-height: 26px;
+    opacity: 0.6;
+  }
+  &__title {
+    @include font-style($fira-sans-medium, 18px, $white);
 
-        margin-bottom: 16px;
-        line-height: 24px;
-    }
-    &__nav-wrap {
-        display: flex;
-        column-gap: 40px;
-    }
-    &__nav-link {
-        @include font-style($open-sans-regular, 14px, $white);
-        @extend .link-default-styles;
+    margin-bottom: 16px;
+    line-height: 24px;
+  }
+  &__nav-wrap {
+    display: flex;
+    column-gap: 40px;
+  }
+  &__nav-link {
+    @include font-style($open-sans-regular, 14px, $white);
+    @extend .link-default-styles;
 
-        line-height: 40px;
+    line-height: 40px;
+  }
+  &__partners {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  &__partner {
+    width: 170px;
+  }
+  &__other {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      width: 1px;
+      height: 10px;
+      background-color: $white;
+      opacity: 0.6;
     }
-    &__partners {
-        display: flex;
-        justify-content: flex-end;
-        gap: 40px;
-        margin-bottom: 30px;
-    }
-    &__partner {
-        width: 170px;
-    }
-    &__other {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        padding: 25px 0;
-        &:after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 51%;
-            transform: translate(-50%, -50%);
-            width: 1px;
-            height: 10px;
-            background-color: $white;
-            opacity: .6;
-        }
-    }
-    &__links-wrap {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        gap: 20px;
-    }
-    &__copyrights,
-    &__link,
-    &__button {
-        @include font-style($open-sans-regular, 13px, $white);
+  }
+  &__links-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+  }
+  &__copyrights,
+  &__link,
+  &__button {
+    @include font-style($open-sans-regular, 13px, $white);
 
-        line-height: 24px;
-    }
-    &__copyrights {
-        opacity: .6;
-    }
-    &__link,
-    &__button {
-        @extend .link-default-styles;
-    }
-    &__button {
-        display: flex;
-        align-items: center;
-    }
-    &__button-icon {
-        @include size(10px);
+    line-height: 24px;
+  }
+  &__copyrights {
+    opacity: 0.6;
+  }
+  &__link,
+  &__button {
+    @extend .link-default-styles;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+  &__button-icon {
+    @include size(10px);
 
-        margin-left: 8px;
-        background-image: url('./images/arrow.svg');
-    }
+    margin-left: 8px;
+    background-image: url('./images/arrow.svg');
+  }
 }

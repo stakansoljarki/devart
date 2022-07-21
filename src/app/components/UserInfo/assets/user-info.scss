@@ -1,9 +1,9 @@
 .user-info {
-    @include font-style($fira-sans-regular, 16px, $white);
-    @extend .link-default-styles;
+  @include font-style($fira-sans-regular, 16px, $white);
+  @extend .link-default-styles;
 
-    &__icon {
-        margin-left: 4px;
-        vertical-align: middle;
-    }
+  &__icon {
+    margin-left: 4px;
+    vertical-align: middle;
+  }
 }

@@ -1,59 +1,59 @@
 .article-card {
-    max-width: 450px;
+  max-width: 450px;
 
-    &__img-wrap {
-        position: relative;
-        margin-bottom: 26px;
-        &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: $black-1;
-            opacity: 0.4;
-        }
+  &__img-wrap {
+    position: relative;
+    margin-bottom: 26px;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $black-1;
+      opacity: 0.4;
     }
-    &__img {
-        object-fit: cover;
-    }
-    &__logo {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        width: auto;
-    }
-    &__title {
-        @include font-style($fira-sans-medium, 18px, $black-1);
+  }
+  &__img {
+    object-fit: cover;
+  }
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: auto;
+  }
+  &__title {
+    @include font-style($fira-sans-medium, 18px, $black-1);
 
-        margin-bottom: 4px;
-        line-height: 24px;
-    }
-    &__description {
-        @include font-style($open-sans-regular, 16px, $black-1);
+    margin-bottom: 4px;
+    line-height: 24px;
+  }
+  &__description {
+    @include font-style($open-sans-regular, 16px, $black-1);
 
-        margin-bottom: 16px;
-        line-height: 28px;
-    }
-    &__link {
-        @include font-style($open-sans-semibold, 14px, $black-1);
+    margin-bottom: 16px;
+    line-height: 28px;
+  }
+  &__link {
+    @include font-style($open-sans-semibold, 14px, $black-1);
 
-        display: inline-flex;
-        align-items: center;
-        padding: 2px 12px 2px 4px;
-        background-color: $gray-4;
-        border: 1px solid $gray-7;
-        &:hover {
-            background-color: lighten($gray-4, 10%);
-        }
-        &:focus {
-            background-color: darken($gray-4, 5%);
-        }
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 12px 2px 4px;
+    background-color: $gray-4;
+    border: 1px solid $gray-7;
+    &:hover {
+      background-color: lighten($gray-4, 10%);
     }
-    &__link-logo {
-        width: 32px;
+    &:focus {
+      background-color: darken($gray-4, 5%);
     }
+  }
+  &__link-logo {
+    width: 32px;
+  }
 }

@@ -1,21 +1,21 @@
 .header {
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    background-color: $black-4;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: $black-4;
 
-    &__container {
-        @extend .container;
+  &__container {
+    @extend .container;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    .nav {
+      &__link-icon {
+        margin-left: 6px;
+      }
     }
-    &__nav {
-        .nav {
-            &__link-icon {
-                margin-left: 6px;
-            }
-        }
-    }
+  }
 }
