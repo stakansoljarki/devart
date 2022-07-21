@@ -76,13 +76,13 @@
         &--size-l {
             position: relative;
             height: 48px;
-            padding-left: 25px;
+            padding-left: 30px;
             letter-spacing: .1em;
             &:before {
                 @include size(24px);
                 content: '';
                 position: absolute;
-                left: 16px;
+                left: 10px;
                 display: block;
             }
         }

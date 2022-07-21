@@ -1,50 +1,20 @@
 import React, {useState} from "react";
+
 import Nav from "../../components/Nav/Nav";
 import NavItem from "../../components/Nav/NavItem";
 import Title from "../../components/Title/Title";
 
-const data = [
-    {
-        text: 'Boost productivity',
-        href: '/',
-        className: 'nav__link--border-bottom',
-    },
-    {
-        text: 'Reuse code modules',
-        href: '/',
-        className: '',
-    },
-    {
-        text: 'Improve code quality',
-        href: '/',
-        className: '',
-    },
-    {
-        text: 'Unify SQL standards',
-        href: '/',
-        className: '',
-    },
-    {
-        text: 'Work safe',
-        href: '/',
-        className: '',
-    },
-    {
-        text: 'Operate with data',
-        href: '/',
-        className: '',
-    },
-]
+import videoGuideData from "./assets/videoGuideData";
 
 const VideoGuide = () => {
-    const [videoGuideItems] = useState(data)
+    const [videoGuide] = useState(videoGuideData)
 
     return(
         <section className="video-guide">
             <div className="video-guide__container">
                 <Title className="video-guide__title">Check out our quick video guides</Title>
                 <Nav className="video-guide__nav">
-                    {videoGuideItems.map(videoGuideItem => (
+                    {videoGuide.map(videoGuideItem => (
                         <NavItem className={videoGuideItem.className} href={videoGuideItem.href} text={videoGuideItem.text}/>
                     ))}
                 </Nav>

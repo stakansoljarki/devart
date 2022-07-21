@@ -4,40 +4,18 @@ import Title from "../../components/Title/Title";
 import Nav from "../../components/Nav/Nav";
 import NavItem from "../../components/Nav/NavItem";
 
-const data = [
-    {
-        text: 'Software developers',
-        href: '/',
-        className: 'nav__link--border-bottom',
-    },
-    {
-        text: 'Database developers',
-        href: '/',
-    },
-    {
-        text: 'Database administrators',
-        href: '/',
-    },
-    {
-        text: 'Data analysis',
-        href: '/',
-    },
-    {
-        text: 'Devops engineers',
-        href: '/',
-    },
-]
+import navData from "./assets/navConstants";
 
 const Indicators = () => {
-    const [indicatorsItems] = useState(data)
+    const [nav] = useState(navData)
 
     return(
         <section className="indicators">
             <div className="indicators__container">
                 <Title className="indicators__title" isWhite>See How SQL Complete Unlocks Value</Title>
                 <Nav className="indicators__nav">
-                    {indicatorsItems.map(indicatorsItem => (
-                        <NavItem className={indicatorsItem.className} href={indicatorsItem.href} text={indicatorsItem.text}/>
+                    {nav.map(navItem => (
+                        <NavItem withImage={navItem.withImage} alt="logo" className={navItem.className} href={navItem.href} text={navItem.text}/>
                     ))}
                 </Nav>
                 <div className="indicators__cards">

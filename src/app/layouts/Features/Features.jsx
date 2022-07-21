@@ -6,48 +6,10 @@ import NavItem from "../../components/Nav/NavItem";
 
 import featureImage from "./assets/images/codestyle.svg";
 
-const data = [
-    {
-        text: 'Collapsed',
-        href: '/',
-    },
-    {
-        text: 'Commas before',
-        href: '/',
-        className: 'nav__link--border-left',
-    },
-    {
-        text: 'Compact',
-        href: '/',
-    },
-    {
-        text: 'Default',
-        href: '/',
-    },
-    {
-        text: 'Extended',
-        href: '/',
-    },
-    {
-        text: 'Indented',
-        href: '/',
-    },
-    {
-        text: 'MSDN SQL',
-        href: '/',
-    },
-    {
-        text: 'Right aligned',
-        href: '/',
-    },
-    {
-        text: 'Stack compact',
-        href: '/',
-    }
-]
+import navData from "./assets/navConstants";
 
 const Features = () => {
-    const [featureItems] = useState(data)
+    const [navItems] = useState(navData)
 
     return(
         <section className="features">
@@ -57,8 +19,8 @@ const Features = () => {
                     <div className="feature__nav-wrap">
                         <h4 className="features__heading">Formatting profiles</h4>
                         <Nav className="features__nav">
-                            {featureItems.map(featureItem => (
-                                <NavItem className={featureItem.className} href={featureItem.href} text={featureItem.text}/>
+                            {navItems.map(navItem => (
+                                <NavItem className={navItem.className} href={navItem.href} text={navItem.text}/>
                             ))}
                         </Nav>
                     </div>
