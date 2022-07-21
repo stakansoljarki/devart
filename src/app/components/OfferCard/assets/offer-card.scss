@@ -1,0 +1,79 @@
+.offer-card {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    background-color: $gray-6;
+    border: 1px solid $gray-7;
+
+    &__logo {
+        width: 60px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__title {
+        @include font-style($fira-sans-regular, 22px, $black-1);
+
+        line-height: 32px;
+    }
+    &__description {
+        @include font-style($fira-sans-regular, 16px, $black-3);
+
+        flex: 1;
+        margin-bottom: 12px;
+        line-height: 28px;
+    }
+    &__list {
+        display: flex;
+        gap: 40px;
+    }
+    &__link {
+        @include font-style($open-sans-regular, 16px, $blue-2);
+
+        display: flex;
+        align-items: center;
+        line-height: 28px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__icon {
+        @include size(24px);
+
+        margin-right: 10px;
+    }
+    &__button {
+        width: 170px;
+        height: 48px;
+    }
+    &--secondary {
+        flex-direction: column;
+        background-color: $gray-1;
+        .offer-card {
+            gap: 50px;
+            &__logo-wrap {
+                margin-bottom: 20px;
+            }
+            &__title {
+                margin-bottom: 16px;
+                color: $white;
+            }
+            &__description {
+                margin-bottom: 16px;
+                color: $white;
+                opacity: .8;
+            }
+            &__list {
+                flex-direction: column;
+                gap: 20px;
+            }
+            &__card-icon {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}

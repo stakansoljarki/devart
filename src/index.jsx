@@ -14,6 +14,7 @@ import Offer from "./app/layouts/Offer/Offer";
 import Clients from "./app/layouts/Clients/Clients";
 import Awards from "./app/layouts/Awards/Awards";
 import Articles from "./app/layouts/Articles/Articles";
+import Plans from "./app/layouts/Plans/Plans";
 import Discount from "./app/layouts/Discount/Discount";
 import Footer from "./app/components/Footer/Footer";
 
@@ -32,6 +33,7 @@ root.render(
       <Clients />
       <Awards />
       <Articles />
+      <Plans />
       <Discount />
       <Footer />
   </React.StrictMode>
