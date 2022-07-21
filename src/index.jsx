@@ -12,6 +12,7 @@ import Features from "./app/layouts/Features/Features";
 import Indicators from "./app/layouts/Indicators/Indicators";
 import Offer from "./app/layouts/Offer/Offer";
 import Clients from "./app/layouts/Clients/Clients";
+import Awards from "./app/layouts/Awards/Awards";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,5 +27,6 @@ root.render(
       <Indicators/>
       <Offer />
       <Clients />
+      <Awards />
   </React.StrictMode>
 );
