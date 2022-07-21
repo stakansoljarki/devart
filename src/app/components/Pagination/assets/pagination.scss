@@ -3,13 +3,12 @@
     align-items: center;
 
     &__button {
+        @include size(40px);
         $border-color: #e3e5ec;
 
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
         border: 1px solid $border-color;
         cursor: pointer;
         &:hover {
@@ -34,9 +33,9 @@
         }
     }
     &__button-arrow {
+        @include size(24px);
+
         display: block;
-        width: 24px;
-        height: 24px;
         background-image: url('../../../../assets/images/collapse-icon.svg');
     }
     &__page {

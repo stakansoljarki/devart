@@ -24,3 +24,8 @@
         background-color: darken($color, 5%);
     }
 }
+
+@mixin size($size) {
+    width: $size;
+    height: $size;
+}

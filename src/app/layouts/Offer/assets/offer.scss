@@ -48,8 +48,8 @@
         }
     }
     &__card-icon {
-        width: 24px;
-        height: 24px;
+        @include size(24px);
+
         margin-right: 10px;
     }
     &__link {
