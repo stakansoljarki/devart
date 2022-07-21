@@ -1,0 +1,20 @@
+.articles {
+    padding: 90px 0 110px;
+    background-color: $white;
+
+    &__container {
+        @extend .container;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 44px;
+    }
+    &__content {
+        display: flex;
+        row-gap: 50px;
+        column-gap: 30px;
+        flex-wrap: wrap;
+    }
+}
