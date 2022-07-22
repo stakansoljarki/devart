@@ -15,7 +15,7 @@ const Indicators = () => {
         <Title className="indicators__title" isWhite>
           See How SQL Complete Unlocks Value
         </Title>
-        <Nav className="indicators__nav">
+        <Nav className="indicators__nav nav--bordered">
           {nav.map((navItem) => (
             <NavItem
               key={navItem.id}

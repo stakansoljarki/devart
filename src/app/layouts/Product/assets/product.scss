@@ -47,11 +47,37 @@
     position: absolute;
     top: 24%;
     left: 40%;
+    width: max-content;
     padding: 6px 20px;
     transition: 0.3s;
     letter-spacing: 0.08em;
     &:hover {
       transform: scale(1.1);
+    }
+  }
+  @media (max-width: 1023px) {
+    padding: 90px 0 80px;
+    &__container {
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__offer-link {
+      position: static;
+      transform: translate(0);
+    }
+    &__img-wrap {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 44px;
+    }
+    &__container {
+      align-items: center;
+    }
+    &__content {
+      text-align: center;
     }
   }
 }

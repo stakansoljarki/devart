@@ -18,7 +18,7 @@ const Features = () => {
           Unveil differences between formatting of predefined styles
         </Title>
         <div className="features__content-wrap">
-          <div className="feature__nav-wrap">
+          <div className="features__nav-wrap">
             <h4 className="features__heading">Formatting profiles</h4>
             <Nav className="features__nav">
               {navItems.map((navItem) => (

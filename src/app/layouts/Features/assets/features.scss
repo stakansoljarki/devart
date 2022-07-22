@@ -13,6 +13,7 @@
   &__content-wrap {
     display: flex;
     justify-content: space-between;
+    gap: 60px;
     padding-right: 65px;
   }
   &__heading {
@@ -69,5 +70,44 @@
 
     margin-left: 10px;
     background-image: url('../../../../assets/images/arrow-icon-white.svg');
+  }
+
+  @media (max-width: 1023px) {
+    padding-top: 50px;
+
+    &__container {
+      margin-bottom: 70px;
+    }
+    &__content-wrap {
+      flex-direction: column;
+      padding: 0;
+    }
+    &__nav-wrap {
+      display: flex;
+      gap: 60px;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+    &__heading {
+      display: none;
+    }
+    &__nav {
+      border: none;
+      .nav {
+        &__list {
+          flex-direction: row;
+          gap: 40px;
+        }
+        &__link {
+          padding-left: 0;
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }

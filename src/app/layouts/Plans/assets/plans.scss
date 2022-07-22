@@ -10,9 +10,22 @@
   }
   &__cards-wrap {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   &__offer-card {
-    width: 33%;
+    width: calc((100% / 3) - 20px);
+  }
+
+  @media (max-width: 1023px) {
+    padding: 50px 0 70px;
+    &__offer-card {
+      width: calc((100% / 2) - 20px);
+    }
+  }
+  @media (max-width: 767px) {
+    &__offer-card {
+      width: 100%;
+    }
   }
 }
