@@ -1,48 +1,48 @@
 .link {
-    @include font-style($fira-sans-medium, 14px, $white);
+  @include font-style($fira-sans-medium, 14px, $white);
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 16px;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    transition: .3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: 0.3s;
 
-    &--blue {
-        @include background-effects($blue-2);
+  &--blue {
+    @include background-effects($blue-2);
+  }
+  &--green {
+    @include background-effects($accent-2);
+  }
+  &--white {
+    background-color: $white;
+    color: $black-1;
+    &:hover {
+      background-color: darken($white, 5%);
     }
-    &--green {
-        @include background-effects($accent-2);
+    &:focus {
+      background-color: darken($white, 5%);
+      box-shadow: 0 0 1px 1px $gray-6;
     }
-    &--white {
-        background-color: $white;
-        color: $black-1;
-        &:hover {
-            background-color: darken($white, 5%);
-        }
-        &:focus {
-            background-color: darken($white, 5%);
-            box-shadow: 0 0 1px 1px $gray-6;
-        }
+  }
+  &--bordered {
+    color: $blue-2;
+    border: 1px solid $gray-3;
+    &:hover {
+      border-color: $blue-2;
     }
-    &--bordered {
-        color: $blue-2;
-        border: 1px solid $gray-3;
-        &:hover {
-            border-color: $blue-2;
-        }
-        &:focus {
-            border-color: darken($blue-2, 5%);
-        }
+    &:focus {
+      border-color: darken($blue-2, 5%);
     }
-    &--transparent {
-        border: 1.5px solid rgba(255, 255, 255, 0.25);
-        &:hover {
-            border-color: rgba(255, 255, 255, 0.75);
-        }
-        &:focus {
-            border-color: rgba(255, 255, 255, 0.5);
-        }
+  }
+  &--transparent {
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.75);
     }
+    &:focus {
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+  }
 }

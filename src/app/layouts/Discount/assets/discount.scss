@@ -1,70 +1,70 @@
 .discount {
-    padding: 90px 0 110px;
-    background-color: $gray-4;
+  padding: 90px 0 110px;
+  background-color: $gray-4;
 
-    &__container {
-        @extend .container;
+  &__container {
+    @extend .container;
 
-        text-align: center;
-    }
-    &__title {
-        margin-bottom: 40px;
-    }
-    &__steps-wrap {
-        display: flex;
-        justify-content: center;
-        column-gap: 35px;
-        margin-bottom: 50px;
-    }
-    &__step {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__step-img-wrap {
-        @include size(90px);
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__steps-wrap {
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+    margin-bottom: 50px;
+  }
+  &__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__step-img-wrap {
+    @include size(90px);
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 16px;
-        background-color: $white;
-        box-shadow: 0 2px 6px rgba(214, 215, 217, 0.4), 0 6px 20px rgba(214, 215, 217, 0.5);
-        border-radius: 50%;
-    }
-    &__step-img {
-        @include size(36px);
-    }
-    &__step-title {
-        @include font-style($fira-sans-medium, 14px, $blue-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    background-color: $white;
+    box-shadow: 0 2px 6px rgba(214, 215, 217, 0.4), 0 6px 20px rgba(214, 215, 217, 0.5);
+    border-radius: 50%;
+  }
+  &__step-img {
+    @include size(36px);
+  }
+  &__step-title {
+    @include font-style($fira-sans-medium, 14px, $blue-2);
 
-        margin-bottom: 12px;
-        line-height: 22px;
-        letter-spacing: 0.08em;
-        opacity: .99;
-    }
-    &__step-description {
-        @include font-style($fira-sans-regular, 22px, $black-1);
+    margin-bottom: 12px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    opacity: 0.99;
+  }
+  &__step-description {
+    @include font-style($fira-sans-regular, 22px, $black-1);
 
-        line-height: 32px;
+    line-height: 32px;
+  }
+  &__arrow-wrap {
+    padding-top: 35px;
+  }
+  &__info {
+    display: flex;
+  }
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    width: calc(100% / 3);
+    max-height: 255px;
+    margin: auto;
+    &--big {
+      max-height: 270px;
     }
-    &__arrow-wrap {
-        padding-top: 35px;
-    }
-    &__info {
-        display: flex;
-    }
-    &__link {
-        display: inline-flex;
-        align-items: center;
-        width: calc(100%/3);
-        max-height: 255px;
-        margin: auto;
-        &--big {
-            max-height: 270px;
-        }
-    }
-    &__link-img {
-        object-fit: cover;
-    }
+  }
+  &__link-img {
+    object-fit: cover;
+  }
 }

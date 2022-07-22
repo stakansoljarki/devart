@@ -1,20 +1,20 @@
 .clients {
-    padding: 90px 0 110px;
-    background-color: $gray-4;
+  padding: 90px 0 110px;
+  background-color: $gray-4;
 
-    &__container {
-        @extend .container;
-    }
-    &__title {
-        margin-bottom: 33px;
-    }
-    &__cards-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 60px;
-        column-gap: 90px;
-    }
-    &__card {
-        width: 210px;
-    }
+  &__container {
+    @extend .container;
+  }
+  &__title {
+    margin-bottom: 33px;
+  }
+  &__cards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 90px;
+  }
+  &__card {
+    width: 210px;
+  }
 }

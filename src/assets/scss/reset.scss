@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -83,54 +83,54 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 body,
 html {
-    min-width: 100%;
-    min-height: 100%;
-    line-height: 1;
-    text-transform: none;
-    visibility: visible;
+  min-width: 100%;
+  min-height: 100%;
+  line-height: 1;
+  text-transform: none;
+  visibility: visible;
 }
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img,
 fieldset,
 a img {
-    border: none;
+  border: none;
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 a {
+  text-decoration: none;
+  &:active,
+  &:hover {
+    outline: none;
     text-decoration: none;
-    &:active,
-    &:hover {
-        outline: none;
-        text-decoration: none;
-    }
+  }
 }
 input,
 button {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
 }
 *:focus {
-    outline: none;
+  outline: none;
 }
