@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 
+import classNames from 'classnames';
+import Logo from '../Logo/Logo';
 import Nav from '../Nav/Nav';
 import NavItem from '../Nav/NavItem';
 import Menu from '../Menu/Menu';
-import Logo from '../Logo/Logo';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 import navData from './assets/constants';
 
 const Header = () => {
-  const [nav] = useState(navData);
+  const [isBurgerActive, setBurgerActive] = useState(false);
 
   return (
     <header className="header">
       <div className="header__container">
         <Logo />
-        <Nav className="header__nav">
-          {nav.map((navItem) => (
+        <Nav className={classNames('header__nav', { 'header__nav--mobile-open': isBurgerActive })}>
+          {navData.map((navItem) => (
             <NavItem
               key={navItem.id}
               withImage={navItem.withImage}
@@ -27,6 +29,7 @@ const Header = () => {
           ))}
         </Nav>
         <Menu />
+        <BurgerMenu isBurgerActive={isBurgerActive} setBurgerActive={setBurgerActive} />
       </div>
     </header>
   );
