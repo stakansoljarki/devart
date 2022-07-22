@@ -8,16 +8,14 @@ import {
 } from 'react-accessible-accordion';
 
 const AccordionListItem = ({ title, text }) => (
-  <div>
-    <AccordionItem>
-      <AccordionItemHeading>
-        <AccordionItemButton>{title}</AccordionItemButton>
-      </AccordionItemHeading>
-      <AccordionItemPanel>
-        <p>{text}</p>
-      </AccordionItemPanel>
-    </AccordionItem>
-  </div>
+  <AccordionItem>
+    <AccordionItemHeading>
+      <AccordionItemButton>{title}</AccordionItemButton>
+    </AccordionItemHeading>
+    <AccordionItemPanel>
+      <p>{text}</p>
+    </AccordionItemPanel>
+  </AccordionItem>
 );
 
 export default AccordionListItem;

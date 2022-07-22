@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import OfferCard from '../../components/OfferCard/OfferCard';
 import Link from '../../components/Link/Link';
@@ -8,13 +8,11 @@ import cardData from './assets/cardConstants';
 import discountIcon from './assets/images/discount-icon.svg';
 
 function Offer() {
-  const [cards] = useState(cardData);
-
   return (
     <section className="offer">
       <div className="offer__container">
         <div className="offer__cards-wrap">
-          {cards.map((card) => (
+          {cardData.map((card) => (
             <OfferCard
               key={card.id}
               logo={card.logo}

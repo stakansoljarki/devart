@@ -10,8 +10,8 @@ const offerCardData = [
     title: 'Get started with SQL Complete at no cost',
     description:
       'Download a FREE trial version and see how much time you can save on your coding and database deployment today.',
-    withLink: 'true',
-    isTransparent: 'true',
+    withLink: true,
+    isTransparent: true,
     linkText: 'Download free',
   },
   {
@@ -21,8 +21,8 @@ const offerCardData = [
     title: 'Get started with SQL Complete at no cost',
     description:
       'Download a FREE trial version and see how much time you can save on your coding and database deployment today.',
-    withLink: 'true',
-    isBlue: 'isBlue',
+    withLink: true,
+    isBlue: true,
     linkText: 'Download free',
   },
   {
@@ -32,7 +32,7 @@ const offerCardData = [
     title: 'Need a hand',
     description:
       'If you need any help or have questions about Devart tools or purchasing options, do not hesitate to get in touch with us',
-    withList: 'withList',
+    withList: true,
   },
 ];
 

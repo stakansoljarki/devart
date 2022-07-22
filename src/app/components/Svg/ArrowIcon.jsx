@@ -16,7 +16,7 @@ const ArrowIcon = ({ className }) => (
 export default ArrowIcon;
 
 ArrowIcon.defaultProps = {
-  className: string,
+  className: '',
 };
 
 ArrowIcon.propTypes = {

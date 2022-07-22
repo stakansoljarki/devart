@@ -57,7 +57,7 @@ OfferCard.defaultProps = {
   withList: false,
   withLink: false,
   isBlue: false,
-  isTransparent: '',
+  isTransparent: false,
   linkText: '',
 };
 
@@ -69,6 +69,6 @@ OfferCard.propTypes = {
   withList: bool,
   withLink: bool,
   isBlue: bool,
-  isTransparent: string,
+  isTransparent: bool,
   linkText: string,
 };
