@@ -5,4 +5,7 @@
     align-items: center;
     gap: 40px;
   }
+  &__link-icon {
+    @include size(18px);
+  }
 }
