@@ -17,6 +17,7 @@ import Articles from './app/layouts/Articles/Articles';
 import Plans from './app/layouts/Plans/Plans';
 import Discount from './app/layouts/Discount/Discount';
 import Footer from './app/components/Footer/Footer';
+import Subscribe from './app/layouts/Subscribe/Subscribe';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,6 +35,7 @@ root.render(
     <Articles />
     <Plans />
     <Discount />
+    <Subscribe />
     <Footer />
   </React.StrictMode>,
 );
