@@ -6,4 +6,7 @@
   &--white {
     color: $white;
   }
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
 }

@@ -1,5 +1,6 @@
 .article-card {
-  max-width: 450px;
+  display: flex;
+  flex-direction: column;
 
   &__img-wrap {
     position: relative;
@@ -35,6 +36,7 @@
   &__description {
     @include font-style($open-sans-regular, 16px, $black-1);
 
+    flex: 1;
     margin-bottom: 16px;
     line-height: 28px;
   }
@@ -43,7 +45,10 @@
 
     display: inline-flex;
     align-items: center;
+    width: max-content;
+    max-width: 100%;
     padding: 2px 12px 2px 4px;
+    line-height: 25px;
     background-color: $gray-4;
     border: 1px solid $gray-7;
     &:hover {

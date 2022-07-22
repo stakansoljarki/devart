@@ -19,27 +19,29 @@ const About = () => {
     <section className="about">
       <header className="about__header">
         <div className="about__container">
-          <a href="/" className="about__product-link">
-            <img className="about__product-logo" src={sqlLogo} alt="sql logo" />
-            SQL Complete
-          </a>
-          <Nav className="about__nav">
-            {nav.map((navItem) => (
-              <NavItem
-                className={navItem.className}
-                key={navItem.id}
-                href={navItem.href}
-                text={navItem.text}
-              />
-            ))}
-          </Nav>
-          <div className="about__link-wrap">
-            <Link className="about__link" href="/" isBlue>
-              Download
-            </Link>
-            <Link className="about__link" href="/" isGreen>
-              Buy Now
-            </Link>
+          <div className="about__nav-panel">
+            <a href="/" className="about__product-link">
+              <img className="about__product-logo" src={sqlLogo} alt="sql logo" />
+              SQL Complete
+            </a>
+            <Nav className="about__nav">
+              {nav.map((navItem) => (
+                <NavItem
+                  className={navItem.className}
+                  key={navItem.id}
+                  href={navItem.href}
+                  text={navItem.text}
+                />
+              ))}
+            </Nav>
+            <div className="about__link-wrap">
+              <Link className="about__link" href="/" isBlue>
+                Download
+              </Link>
+              <Link className="about__link" href="/" isGreen>
+                Buy Now
+              </Link>
+            </div>
           </div>
         </div>
       </header>
@@ -59,7 +61,7 @@ const About = () => {
               dramatically due to the features that are included in SQL Complete but are lacking in
               Management Studio and Visual Studio IntelliSense.
             </p>
-            <div className="about__link-wrap">
+            <div className="about__link-wrap about__link-wrap--wrap">
               <Link className="about__link about__link--size-l" href="/" isBlue>
                 Watch the introductory video
               </Link>

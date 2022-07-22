@@ -100,114 +100,128 @@ const Footer = () => (
             </ul>
           </div>
         </div>
-        <div className="footer__list">
-          <h4 className="footer__title">Support</h4>
-          <div className="footer__nav-wrap">
-            <ul className="footer__nav">
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Submit Request
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  View Forums
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Documentation Center
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Ordering FAQs
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Discount Programs
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Using Website
-                </a>
-              </li>
-            </ul>
+        <div className="footer__list-wrap">
+          <div className="footer__list">
+            <h4 className="footer__title">Support</h4>
+            <div className="footer__nav-wrap">
+              <ul className="footer__nav">
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Submit Request
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    View Forums
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Documentation Center
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Ordering FAQs
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Discount Programs
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Using Website
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div className="footer__list">
-          <h4 className="footer__title">Company</h4>
-          <div className="footer__nav-wrap">
-            <ul className="footer__nav">
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  About Us
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Archive News
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Contacts
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Contact Us
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Success Stories
-                </a>
-              </li>
-            </ul>
-            <ul className="footer__nav">
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Events
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Customers
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Partners
-                </a>
-              </li>
-              <li className="footer__nav-item">
-                <a href="/" className="footer__nav-link">
-                  Resellers
-                </a>
-              </li>
-            </ul>
+          <div className="footer__list">
+            <h4 className="footer__title">Company</h4>
+            <div className="footer__nav-wrap">
+              <ul className="footer__nav">
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    About Us
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Archive News
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Contacts
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Contact Us
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Success Stories
+                  </a>
+                </li>
+              </ul>
+              <ul className="footer__nav">
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Events
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Customers
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Partners
+                  </a>
+                </li>
+                <li className="footer__nav-item">
+                  <a href="/" className="footer__nav-link">
+                    Resellers
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <div className="footer__partners">
-        <div className="footer__partner">
-          <img src={microsoftLogo} alt="Microsoft Partner logo" className="footer__partner-logo" />
+        <div className="footer__partner-wrap">
+          <div className="footer__partner">
+            <img
+              src={microsoftLogo}
+              alt="Microsoft Partner logo"
+              className="footer__partner-logo"
+            />
+          </div>
+          <div className="footer__partner">
+            <img src={oracleLogo} alt="Oracle Partner logo" className="footer__partner-logo" />
+          </div>
         </div>
-        <div className="footer__partner">
-          <img src={oracleLogo} alt="Oracle Partner logo" className="footer__partner-logo" />
-        </div>
-        <div className="footer__partner">
-          <img
-            src={embarcaderoLogo}
-            alt="Embarcadero Partner logo"
-            className="footer__partner-logo"
-          />
-        </div>
-        <div className="footer__partner">
-          <img src={visualLogo} alt="Visual Studio Partner logo" className="footer__partner-logo" />
+        <div className="footer__partner-wrap">
+          <div className="footer__partner">
+            <img
+              src={embarcaderoLogo}
+              alt="Embarcadero Partner logo"
+              className="footer__partner-logo"
+            />
+          </div>
+          <div className="footer__partner">
+            <img
+              src={visualLogo}
+              alt="Visual Studio Partner logo"
+              className="footer__partner-logo"
+            />
+          </div>
         </div>
       </div>
       <div className="footer__other">

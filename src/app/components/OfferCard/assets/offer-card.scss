@@ -27,6 +27,7 @@
   }
   &__list {
     display: flex;
+    align-items: center;
     gap: 40px;
   }
   &__link {
@@ -53,9 +54,6 @@
     background-color: $gray-1;
     .offer-card {
       gap: 50px;
-      &__logo-wrap {
-        margin-bottom: 20px;
-      }
       &__title {
         margin-bottom: 16px;
         color: $white;
@@ -67,6 +65,7 @@
       }
       &__list {
         flex-direction: column;
+        align-items: flex-start;
         gap: 20px;
       }
       &__card-icon {
@@ -75,5 +74,25 @@
         }
       }
     }
+  }
+
+  @media (max-width: 1023px) {
+    &--secondary {
+      .offer-card {
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    gap: 30px;
+
+    &__list {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  }
+  @media (max-width: 550px) {
+    flex-direction: column;
+    padding: 20px;
   }
 }

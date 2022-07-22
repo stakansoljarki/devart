@@ -5,20 +5,6 @@
 @import 'src/assets/scss/mixins';
 @import 'src/assets/scss/variables';
 
-// Layouts
-@import './src/app/layouts/Product/assets/product';
-@import './src/app/layouts/About/assets/about';
-@import './src/app/layouts/VideoGuide/assets/videoguide';
-@import './src/app/layouts/Promo/assets/promo';
-@import './src/app/layouts/Features/assets/features';
-@import './src/app/layouts/Indicators/assets/indicators';
-@import './src/app/layouts/Offer/assets/offer';
-@import './src/app/layouts/Clients/assets/clients';
-@import './src/app/layouts/Awards/assets/awards';
-@import './src/app/layouts/Articles/assets/articles';
-@import './src/app/layouts/Plans/assets/plans';
-@import './src/app/layouts/Discount/assets/discount';
-
 // Components
 @import './src/app/components/Header/assets/header';
 @import './src/app/components/Nav/assets/nav';
@@ -35,3 +21,17 @@
 @import './src/app/components/OfferCard/assets/offer-card';
 @import './src/app/components/Footer/assets/footer';
 @import './src/app/components/Socials/assets/socials';
+
+// Layouts
+@import './src/app/layouts/Product/assets/product';
+@import './src/app/layouts/About/assets/about';
+@import './src/app/layouts/VideoGuide/assets/videoguide';
+@import './src/app/layouts/Promo/assets/promo';
+@import './src/app/layouts/Features/assets/features';
+@import './src/app/layouts/Indicators/assets/indicators';
+@import './src/app/layouts/Offer/assets/offer';
+@import './src/app/layouts/Clients/assets/clients';
+@import './src/app/layouts/Awards/assets/awards';
+@import './src/app/layouts/Articles/assets/articles';
+@import './src/app/layouts/Plans/assets/plans';
+@import './src/app/layouts/Discount/assets/discount';

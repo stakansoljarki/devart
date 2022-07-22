@@ -42,15 +42,51 @@
   &__discount-info {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   &__discount-price {
     @include font-style($fira-sans-regular, 22px, $accent-3);
 
-    margin-left: 16px;
     line-height: 32px;
     &--medium {
+      margin-left: 16px;
       font-size: 46px;
       line-height: 64px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__discount-logo {
+      margin-bottom: 25px;
+    }
+    &__discount-info {
+      gap: 10px;
+    }
+    &__discount-description {
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 1023px) {
+    padding: 50px 0 70px;
+
+    &__container {
+      flex-direction: column;
+    }
+    &__discount {
+      order: -1;
+      max-width: 100%;
+    }
+    &__discount-info {
+      justify-content: flex-end;
+    }
+  }
+  @media (max-width: 550px) {
+    &__discount {
+      padding: 20px;
+    }
+    &__discount-title {
+      font-size: 28px;
     }
   }
 }

@@ -24,11 +24,7 @@
   }
   &__list-wrap {
     display: flex;
-  }
-  &__list {
-    &:not(:last-child) {
-      margin-right: 90px;
-    }
+    gap: 90px;
   }
   &__list-item {
     @include font-style($fira-sans-light, 16px, $white);
@@ -46,6 +42,17 @@
       transform: translateY(-50%);
       border-radius: 50%;
       background-color: $blue-3;
+    }
+  }
+  @media (max-width: 850px) {
+    &__img-wrap {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    &__list-wrap {
+      flex-direction: column;
+      gap: 0;
     }
   }
 }

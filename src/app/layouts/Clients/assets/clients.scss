@@ -11,10 +11,19 @@
   &__cards-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     row-gap: 60px;
     column-gap: 90px;
   }
   &__card {
     width: 210px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 50px 0 70px;
+
+    &__title {
+      text-align: center;
+    }
   }
 }
